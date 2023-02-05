@@ -19,6 +19,12 @@ const config = {
   organizationName: 'arisac', // Usually your GitHub org/user name.
   projectName: 'docusaurus-boilerplate', // Usually your repo name.
 
+  markdown: {
+    mermaid: true
+  },
+  themes: [
+    '@docusaurus/theme-mermaid'
+  ],
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
