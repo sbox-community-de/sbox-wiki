@@ -9,8 +9,8 @@ const TwitterSvg =
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Docusaurus Boilerplate',
-  tagline: 'Dinosaurs are cool',
+  title: 'Unofficial S&box Wiki',
+  tagline: 'Did a thing',
   url: 'http://docusaurus-boilerplate.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -115,7 +115,7 @@ const config = {
         },
         blog: {
           blogTitle: 'Blog!',
-          blogDescription: 'A Docusaurus powered blog!',
+          blogDescription: 'S&Box Blog',
           postsPerPage: 10, // number / 'ALL'
           showReadingTime: true,
           // Please change this to your repo.
@@ -139,10 +139,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        hideOnScroll: false,
-        title: 'Docusaurus Boilerplate',
+        hideOnScroll: true,
+        title: 'Unofficial Wiki',
         logo: {
-          alt: 'Docusaurus Logo',
+          alt: 'Unofficial S&Box Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -187,37 +187,24 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Facepunch',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Forum',
+                href: 'https://forum.facepunch.com/c/sb/5',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.com/invite/sbox',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'API',
+                href: 'https://asset.party/api/',
+              }
             ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Docusaurus Boilerplate. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}; Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -230,8 +217,8 @@ const config = {
       },
       announcementBar: {
         id: 'announcementBar-0', // Increment on change
-        content: `⭐️ If you like this Docusaurus Boilerplate, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/arisac/docusaurus-boilerplate">GitHub</a> and follow me on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/arisdotac" >${TwitterSvg} Twitter</a>`,
-        isCloseable: true,
+        content: `We are <strong>not</strong> affiliated with Facepunch - <a target="_blank" rel="noopener noreferrer" href="https://wiki.facepunch.com/sbox">Official S&Box Wiki</a>`,
+        isCloseable: false,
       },
       docs: {
         sidebar: {
