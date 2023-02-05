@@ -70,3 +70,18 @@ article .markdown {
     margin: auto;
   }
 }
+
+// CUSTOM
+.destinations > .card-content
+{
+  border: 1px solid rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,.4);
+  padding: 0.5rem;
+  text-decoration: none;
+
+  &:hover
+  {
+    transform: scale(1.01);
+    transition: transform ease-in-out 0.1s;
+  }
+}
