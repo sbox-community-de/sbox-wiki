@@ -1,9 +1,4 @@
----
-sidebar_position: 1
-slug: /materials-shaders
----
-
-# General
+# Models & Animation
 Hey hey
 
 ## Overview

@@ -1,0 +1,36 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ExplorerViewAnimated from './assets/explorerViewInAction.gif';
+import ExplorerView from './assets/explorerView.webp';
+import ExplorerViewOptions from './assets/explorerViewOptions.webp';
+
+# Creating a Project
+
+## Creation
+if you wish to create a project, you've the following options
+
+1. Pressing the Short-Cut
+
+<kbd>CTRL</kbd> + <kbd>N</kbd>
+
+2. Navigating inside the Editor
+
+<Tabs>
+  <TabItem value="animated" label="Animated (Visual)" default>
+    <img src={ExplorerViewAnimated} width="250"/>
+  </TabItem>
+  <TabItem value="stepByStep" label="Split up (Step-By-Step)">
+    <h3>Explorer View</h3>
+    <p>Pressing on the <kbd>+</kbd> will result in the appearance of the following sub-menu</p>
+    <div style={{
+      display: 'flex',
+      flexWrap: 'nowrap',
+      flexDirection: 'row',
+      alignItems: 'flex-start',
+      justifyContent: 'space-evenly'
+    }}>
+      <img src={ExplorerView} width=""/>
+      <img src={ExplorerViewOptions}/>
+    </div>
+  </TabItem>
+</Tabs>
