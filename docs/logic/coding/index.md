@@ -1,8 +1,4 @@
----
-sidebar_position: 2
----
-
-# Playing
+# Coding
 Hey hey
 
 ## Overview

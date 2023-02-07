@@ -1,9 +1,4 @@
----
-sidebar_position: 1
-slug: /ui
----
-
-# General
+# User Interface
 Hey hey
 
 ## Overview

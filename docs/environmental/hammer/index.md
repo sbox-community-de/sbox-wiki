@@ -1,8 +1,3 @@
----
-sidebar_position: 1
-slug: /hammer
----
-
 # Hammer
 Hey hey
 
