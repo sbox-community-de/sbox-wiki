@@ -27,17 +27,17 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    locales: ['en', 'de'],
     localeConfigs: {
       en: {
         label: 'English',
         direction: 'ltr',
         htmlLang: 'en-US',
       },
-      fr: {
-        label: 'Français',
+      de: {
+        label: 'Deutsch',
         direction: 'ltr',
-        htmlLang: 'fr-FR',
+        htmlLang: 'de-de',
       },
     },
   },
@@ -66,10 +66,10 @@ const config = {
       indexPages: true,
 
       // language of your documentation, see next section
-      language: ["en", "fr"],
+      language: ["en", "de"],
 
       // setting this to "none" will prevent the default CSS to be included. The default CSS
-      // comes from autocomplete-theme-classic, which you can read more about here:
+      // comes deom autocomplete-theme-classic, which you can read more about here:
       // https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-theme-classic/
       style: undefined,
 
@@ -153,21 +153,21 @@ const config = {
         },
         items: [
           {
-            to: '/quick-start',
+            to: '/',
             position: 'left',
-            label: 'Quick Start',
+            label: 'Docs',
           },
           {
-            to: '/intermediate',
+            to: '/tutorials',
             position: 'left',
-            label: 'Intermediate',
-          },
+            label: 'Tutorials',
+          },    
           {
-            to: '/extras',
+            to: 'https://asset.party/api/',
             position: 'left',
-            label: 'Extras',
-          },
-          { to: '/blog', label: 'Blog', position: 'left' },
+            label: 'API',
+          }, 
+          { to: 'https://sbox.facepunch.com/news', label: 'News', position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
