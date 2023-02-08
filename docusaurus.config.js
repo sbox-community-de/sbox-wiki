@@ -59,7 +59,7 @@ const config = {
       indexDocSidebarParentCategories: 3,
 
       // whether to index blog pages
-      indexBlog: true,
+      // indexBlog: true,
 
       // whether to index static pages
       // /404.html is never indexed
@@ -113,21 +113,9 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/arisac/docusaurus-boilerplate/edit/main/',
-          showLastUpdateAuthor: true,
+          editUrl: 'https://github.com/ThePawlow/Unofficial-SBox-Wiki',
           showLastUpdateTime: true,
           breadcrumbs: true,
-        },
-        blog: {
-          blogTitle: 'Blog!',
-          blogDescription: 'S&Box Blog',
-          postsPerPage: 10, // number / 'ALL'
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/arisac/docusaurus-boilerplate/edit/main/blog/',
-          blogSidebarCount: 10,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -157,6 +145,16 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
+          {
+            to: '/environmental',
+            position: 'left',
+            label: 'Environmental',
+          },   
+          {
+            to: '/interactivity',
+            position: 'left',
+            label: 'Interactivity',
+          },   
           {
             to: '/tutorials',
             position: 'left',
