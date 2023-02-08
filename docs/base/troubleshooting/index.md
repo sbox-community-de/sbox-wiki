@@ -1,4 +1,8 @@
-# Hammer
+---
+sidebar_position: 3
+---
+
+# Troubleshooting
 Hey hey
 
 ## Overview
