@@ -19,19 +19,25 @@ const config = {
   organizationName: 'arisac', // Usually your GitHub org/user name.
   projectName: 'docusaurus-boilerplate', // Usually your repo name.
 
+  markdown: {
+    mermaid: true
+  },
+  themes: [
+    '@docusaurus/theme-mermaid'
+  ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    locales: ['en', 'de'],
     localeConfigs: {
       en: {
         label: 'English',
         direction: 'ltr',
         htmlLang: 'en-US',
       },
-      fr: {
-        label: 'Français',
+      de: {
+        label: 'Deutsch',
         direction: 'ltr',
-        htmlLang: 'fr-FR',
+        htmlLang: 'de-de',
       },
     },
   },
@@ -53,17 +59,17 @@ const config = {
       indexDocSidebarParentCategories: 3,
 
       // whether to index blog pages
-      indexBlog: true,
+      // indexBlog: true,
 
       // whether to index static pages
       // /404.html is never indexed
       indexPages: true,
 
       // language of your documentation, see next section
-      language: ["en", "fr"],
+      language: ["en", "de"],
 
       // setting this to "none" will prevent the default CSS to be included. The default CSS
-      // comes from autocomplete-theme-classic, which you can read more about here:
+      // comes deom autocomplete-theme-classic, which you can read more about here:
       // https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-theme-classic/
       style: undefined,
 
@@ -107,21 +113,9 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/arisac/docusaurus-boilerplate/edit/main/',
-          showLastUpdateAuthor: true,
+          editUrl: 'https://github.com/ThePawlow/Unofficial-SBox-Wiki',
           showLastUpdateTime: true,
           breadcrumbs: true,
-        },
-        blog: {
-          blogTitle: 'Blog!',
-          blogDescription: 'S&Box Blog',
-          postsPerPage: 10, // number / 'ALL'
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/arisac/docusaurus-boilerplate/edit/main/blog/',
-          blogSidebarCount: 10,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -147,21 +141,31 @@ const config = {
         },
         items: [
           {
-            to: '/quick-start',
+            to: '/',
             position: 'left',
-            label: 'Quick Start',
+            label: 'Docs',
           },
           {
-            to: '/intermediate',
+            to: '/environmental',
             position: 'left',
-            label: 'Intermediate',
-          },
+            label: 'Environmental',
+          },   
           {
-            to: '/extras',
+            to: '/interactivity',
             position: 'left',
-            label: 'Extras',
-          },
-          { to: '/blog', label: 'Blog', position: 'left' },
+            label: 'Interactivity',
+          },   
+          {
+            to: '/tutorials',
+            position: 'left',
+            label: 'Tutorials',
+          },    
+          {
+            to: 'https://asset.party/api/',
+            position: 'left',
+            label: 'API',
+          }, 
+          { to: 'https://sbox.facepunch.com/news', label: 'News', position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -209,6 +213,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['csharp'],
       },
       colorMode: {
         defaultMode: 'light',
