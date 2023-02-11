@@ -1,0 +1,77 @@
+# Event System
+
+The event system of S&Box is similar to that of the game Garry's Mod.
+You have the possibility to un/register events and declare callbacks.
+
+Through C# you have the possibility to create your [own attributes](##Custom Attributes) that are bound to events. Which strengthen the human readability of your code
+
+## All available Events
+[Here you can find a list of all available event attributes](https://asset.party/api/Sandbox.Event)
+
+However, keep in mind the purpose of use, so that you do not call server events on the client.
+
+**This will cause an exception!**
+
+## Setting up a Class
+:::info
+
+[Entity](https://asset.party/api/Sandbox.Entity) or [Panel](https://asset.party/api/Sandbox.UI.Panel) based objects are automatically included in the event system.
+
+If your class does not cover the above points - you have to take care of it yourself.
+
+However, this may change in the future to save you additional work.
+
+:::
+
+```cs
+public class NonEntityOrPanelClass
+{
+	/// <summary>
+	/// This is the Constructor
+	/// We do not derive from Entity or Panel, we need to handle Event Registering ourself
+	/// </summary>
+	public NonEntityOrPanelClass()
+	{
+		Event.Register( this );
+	}
+
+	/// <summary>
+	/// This is the Deconstructor
+	/// Since we registered it beforehand, we need do unregister it too.
+	/// </summary>
+	~NonEntityOrPanelClass()
+	{
+		Event.Unregister( this );
+	}
+}
+```
+
+## Custom Attributes
+
+
+```cs
+/// <summary>
+/// Declaring a custom Class to host the attributes
+/// </summary>
+public static class CustomEvent
+{
+    public const string Custom = "custom";
+
+    public class CustomAttribute : EventAttribute
+    {
+        public CustomAttribute() : base( Custom ) { }
+    }
+}
+
+/// <summary>
+/// Assign our Attribute to a Function
+/// </summary>
+[CustomEvent.Custom]
+public void OnCustomEvent()
+{
+    // do something
+}
+
+// Call the event, which triggers all the functions that have the attribute assigned
+Event.Run( CustomEvent.Custom );
+```
