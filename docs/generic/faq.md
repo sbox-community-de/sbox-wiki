@@ -28,20 +28,20 @@ Alternative, if you provide your own solution with Websockets
 ### Mounthing Source based Games
 Mounting other Source-based games is neither possible nor planned.
 
-## Content Creation
-### Providing interactivity
-To make the game interactive for players and vice verse, S&Box utilizes C#, supporting the latest [.NET 7](https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-7) and the [C# Language Feature - 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
+## Asset Creation
+### Interactivity
+To make the game interactive for players and vice verse, S&Box utilizes C#, supporting the latest [.NET 7](https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-7) and the [C# Language Feature 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
 
-### Providing UIs
-Templating is done with [Razor](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-7.0)
+### GUI
+The Engine for layout and templating is [Razor](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-7.0)
 
-Which itself supports HTML and CSS, interactivity still is done with C#.
+Just like traditional web programming it uses HTML and CSS, yet the logic is done with C#.
 
 ### Porting Source 1 Content
 There are third-party tools you can use to port over Source 1 content, but no first-party support is currently available for porting.
 
 :::tip
 
-Only port over content that you have permission for!
+Make sure to transfer or move only the content that you have obtained proper authorization for.
 
 :::
