@@ -1,0 +1,43 @@
+import IncrementalLogging from './_assets/incremental_logging.gif';
+import LoggingChat from './_assets/logging_chat.webp';
+import LoggingConsole from './_assets/logging_console.webp';
+import ErrorBadge from './_assets/error_badge.webp';
+import Status from './_assets/status.webp';
+
+# Code
+Based on what you wish to log, you can determine the importance which influences the visual response.
+
+```cs
+Log.Info( "This is an Info" );
+Log.Warning( "This is a Warning" );
+Log.Error( "This is an Error" );
+```
+
+## Status
+To gain a basic overview, how much Informational, Warnings or Errors have been thrown in total.
+You can look in the bottom right to gain an overview and filter.
+
+Each importance-level can be individually toggled, all of them are active by default
+
+<img src={Status}/>
+
+## Duplicate Logging
+If you log something equal, it will increment the already existing log message
+<img src={IncrementalLogging}/>
+
+## Visual Response
+
+### Error-Badge
+<img src={ErrorBadge}/>
+
+:::info
+
+Only Log.Error produces a Badge on the bottom left
+
+:::
+
+### Console
+<img src={LoggingConsole}/>
+
+### Chat
+<img src={LoggingChat}/>

@@ -143,7 +143,7 @@ const config = {
           {
             to: '/',
             position: 'left',
-            label: 'Docs',
+            label: 'General',
           },
           {
             to: '/environmental',
@@ -165,13 +165,12 @@ const config = {
             position: 'left',
             label: 'API',
           }, 
-          { to: 'https://sbox.facepunch.com/news', label: 'News', position: 'left' },
-          {
-            type: 'localeDropdown',
-            position: 'right',
+          { to: 'https://sbox.facepunch.com/news',
+            label: 'News',
+            position: 'left',
           },
           {
-            href: 'https://github.com/arisac/docusaurus-boilerplate',
+            href: 'https://github.com/ThePawlow/Unofficial-SBox-Wiki',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
@@ -208,7 +207,7 @@ const config = {
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}; Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} - On the goodness of the Community ❤`,
       },
       prism: {
         theme: lightCodeTheme,
