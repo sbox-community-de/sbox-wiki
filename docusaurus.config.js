@@ -151,9 +151,9 @@ const config = {
             label: 'Environmental',
           },   
           {
-            to: '/interactivity',
+            to: '/programming',
             position: 'left',
-            label: 'Interactivity',
+            label: 'Programming',
           },   
           {
             to: '/tutorials',
@@ -161,13 +161,13 @@ const config = {
             label: 'Tutorials',
           },    
           {
-            to: 'https://asset.party/api/',
+            href: 'https://asset.party/api/',
             position: 'left',
             label: 'API',
           }, 
-          { to: 'https://sbox.facepunch.com/news',
-            label: 'News',
+          { href: 'https://sbox.facepunch.com/news',
             position: 'left',
+            label: 'News',          
           },
           {
             href: 'https://github.com/ThePawlow/Unofficial-SBox-Wiki',

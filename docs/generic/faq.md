@@ -2,12 +2,12 @@
 
 ## Developer Preview
 ### Dev Torture Service
-5 Keys are gifted every 6 hours https://asset.party/get/developer/preview
+5 Keys are gifted every 6 hours over the [Dev Torture Service](https://asset.party/get/developer/preview)
 
 ### Key Applications
-Reply with a creative application that shows your interest
+Sent a creative application into the forum, that shows your interest
 
-https://forum.facepunch.com/t/s-box-key-application-megathread/256711
+[Facepunch Forum](https://forum.facepunch.com/t/s-box-key-application-megathread/256711)
 
 ## Game Information
 ### What engine does the game use?
@@ -23,7 +23,7 @@ Multiplayer by default is done through Steam Networking and supports both listen
 
 Alternative, if you provide your own solution with Websockets
 
-[Find out more](../interactivity/programming/networking)
+[Find out more](../programming/interactivity/networking)
 
 ### Mounthing Source based Games
 Mounting other Source-based games is neither possible nor planned.
