@@ -153,7 +153,7 @@ const config = {
           {
             to: '/programming',
             position: 'left',
-            label: 'programming',
+            label: 'Programming',
           },   
           {
             to: '/tutorials',
