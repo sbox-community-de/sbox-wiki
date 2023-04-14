@@ -1,21 +1,20 @@
 # Networking
 
-## Overview
-
 ## Types
 ### Networked
+:::info
+
+To make the `[Net]` Attribute work, your class needs to marked as `partial`.
+This is due to the fact, Code-Generation needs to interact with it.
+
+:::
+
 You can make an attribute networked with `[Net]`
 ```cs
 [Net]
 public float Health { get; set; }
 ```
 
-:::info
-
-To make the `[Net]` Attribute work, your class needs to marked as `partial`.
-This is due to the fact, Code-Gen interacts with it.
-
-:::
 ### Predicted
 ```cs
 [Net, Predicted]
