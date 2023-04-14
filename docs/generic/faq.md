@@ -23,7 +23,7 @@ Multiplayer by default is done through Steam Networking and supports both listen
 
 Alternative, if you provide your own solution with Websockets
 
-[Find out more](../interactivity/programming/networking)
+[Find out more](../programming/interactivity/networking)
 
 ### Mounthing Source based Games
 Mounting other Source-based games is neither possible nor planned.
