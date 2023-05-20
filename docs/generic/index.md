@@ -6,7 +6,7 @@ slug: /
 # Overview
 ## Disclaimer
 
-We'd like to kindly inform you that this an unofficial wiki maintained by [ThePawlow](https://github.com/ThePawlow)!
+We'd like to kindly inform you that this an unofficial wiki maintained by [🇩🇪 s&box Community](https://github.com/sbox-community-de/sbox-wiki).
 
 [Official S&Box Wiki](https://wiki.facepunch.com/sbox)
 

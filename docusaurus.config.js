@@ -9,15 +9,15 @@ const TwitterSvg =
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Unofficial S&box Wiki',
+  title: 's&box Community Wiki',
   tagline: 'Did a thing',
-  url: 'http://docusaurus-boilerplate.vercel.app',
+  url: 'https://wiki.sbox-community.de',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'arisac', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-boilerplate', // Usually your repo name.
+  organizationName: 'sbox-community-de', // Usually your GitHub org/user name.
+  projectName: 'sbox-wiki', // Usually your repo name.
 
   markdown: {
     mermaid: true
@@ -113,7 +113,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/ThePawlow/Unofficial-SBox-Wiki',
+          editUrl: 'https://github.com/sbox-community-de/sbox-wiki',
           showLastUpdateTime: true,
           breadcrumbs: true,
         },
@@ -134,10 +134,10 @@ const config = {
     ({
       navbar: {
         hideOnScroll: true,
-        title: 'Unofficial Wiki',
+        title: 's&box Community',
         logo: {
-          alt: 'Unofficial S&Box Logo',
-          src: 'img/logo.svg',
+          alt: 'lgo',
+          src: 'img/logo.webp',
         },
         items: [
           {
@@ -170,7 +170,7 @@ const config = {
             label: 'News',          
           },
           {
-            href: 'https://github.com/ThePawlow/Unofficial-SBox-Wiki',
+            href: 'https://github.com/sbox-community-de/sbox-wiki',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
@@ -207,7 +207,7 @@ const config = {
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} - On the goodness of the Community ❤`,
+        copyright: `Copyright © ${new Date().getFullYear()} - 🇩🇪 s&box Community ❤`,
       },
       prism: {
         theme: lightCodeTheme,
