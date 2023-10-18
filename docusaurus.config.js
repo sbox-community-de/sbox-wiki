@@ -26,7 +26,7 @@ const config = {
     '@docusaurus/theme-mermaid'
   ],
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'de',
     locales: ['en', 'de'],
     localeConfigs: {
       en: {
@@ -140,6 +140,10 @@ const config = {
           src: 'img/logo.webp',
         },
         items: [
+          {
+            type: 'localeDropdown',
+            position: 'left',
+          },
           {
             to: '/',
             position: 'left',
